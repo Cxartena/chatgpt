@@ -1,21 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
 header {
-    background: #0056b3;
-    color: white;
-    padding: 1rem;
+    background: #1f1f1f;
+    padding: 20px;
     text-align: center;
+}
+
+h1 {
+    color: #ffdd57;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
 }
 
 nav ul li {
@@ -24,71 +31,38 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffdd57;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-#hero {
-    background: url('https://cdn.montessoriservices.com/product/1200/q40_fsh21_9010altsquare.jpg') no-repeat center center/cover;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
+nav ul li a:hover {
+    color: #fff;
 }
 
-.cta-button {
-    background: #ffcc00;
-    color: #333;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-#services, #about, #contact {
+section {
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
+    border-bottom: 1px solid #333;
+}
+
+.menu-item {
+    background: #1f1f1f;
+    margin: 10px 0;
+    padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
 }
 
-.service {
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background: #0056b3;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #004494;
+.menu-item:hover {
+    background: #333;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: white;
+    background: #1f1f1f;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
+
