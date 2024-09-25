@@ -55,7 +55,7 @@ section {
 }
 
 .menu-item:hover {
-    background: #00ff2a;
+    background: #4f4f4f;
     transition: color 0.3s;
 }
 
