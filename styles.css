@@ -55,7 +55,8 @@ section {
 }
 
 .menu-item:hover {
-    background: #333;
+    background: #00ff2a;
+    transition: color 0.3s;
 }
 
 footer {
